@@ -1,0 +1,104 @@
+PROGRAMMING GUIDE
+
+#define trigPin1 A5
+#define echoPin1 A4
+#define irs A0
+#define m1
+#define m2
+long duration, distance, sensor1, sensor2;
+int temp=0, i=0, ir=0;
+Boolean Serial_status=0;
+Int counter=0;
+void setup ()
+{
+Serial.begin(9600);
+pinMode(trigPin1, OUTPUT);
+pinMode(echoPin2, INPUT);
+pinMode(m1, OUTPUT);
+pinMode(m2, OUTPUT);
+delay (10000);
+}
+void loop ()
+{
+Ir=digitalRead(irs);
+ultrasensor(trigPin1 , echoPin1);
+senor1=distance;
+Serial.print(sensor1);
+
+If (ir = = HIGH)
+{
+digitalWrite (m1, LOW); 
+digitalWrite (m2, LOW);
+tracking ();
+}
+else if(( sensor1<20) && (sensor1>=2))
+{
+digitalWrite (m1, LOW); 
+digitalWrite (m2, LOW);
+tracking ();
+}
+else
+{ 
+digitalWrite (m1, HIGH); 
+digitalWrite (m2, HIGH);
+}
+delay (100);
+}
+void init_sms()
+{
+ Serial.println(“AT+CMGF=1”);
+delay (400);
+Serial.println(“AT+CMGS=\”919430XXXXXX\””);
+delay (400);
+}	
+void init_sms1()
+
+{ 
+Serial.println(“AT+CMGF=1”);
+delay (400);
+Serial.println(“AT+CMGS=\”919431XXXXXX\””);
+delay (400);
+}
+void send_data(String message)
+{
+Serial.println(nessage);
+delay (200);
+}
+void send_sms()
+{
+digitalWrite(26);
+}
+void tracking ()
+{
+init_sms ();
+send_data (“track fault”);
+send_sms ();
+delay (5000); 
+init_sms1 ();
+send_data (“track fault”);
+send_sms ();
+delay (5000);
+}
+void tracking1()
+
+{
+init_sms();
+
+send_data (“obstruction ahead”);
+send_sms();
+delay(5000);
+init_sms1();
+send_data (“obstruction ahead”);
+send_sms();
+delay(5000);
+}
+void ultrasensor(int trigPin , echoPin)
+{
+digitalWrite(trigPin, LOW);
+delayMicroseconds(2);
+ digitalWrite(trigPin, HIGH);
+delayMicroseconds(10); 
+digitalWrite(trigPin, LOW);
+duration=pulseIn(echoPin,HIGH);
+distance = (distance/2 / 29.1;
+}

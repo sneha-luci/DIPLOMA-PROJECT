@@ -1,0 +1,24 @@
+The railway is the most convenient and low-cost mode of transportation 
+in just position to other modes and also plays a prominent role in the
+ economic blooming of the country. The rail carries both freight and
+ passengers. Railways carry over 30 million passengers and 2.8 million
+ tons of freight daily. India's railway network is recognized as one of
+ the largest railway systems globally under single management.
+ The railway network is also ideal for long-distance travel and movement
+ of bulk commodities, besides being an energy-efficient and economical 
+mode of conveyance and transport. Indian Railways is the preferred carrier
+ of automobiles in the country.
+                                                                        
+To have an effective means of transport, a proper surveillance system is 
+necessary for railroad crack analysis the most awaited problem in railroad 
+maintenance is the shortage of cheap and efficient technology to detect track flaws.
+ An effective track surveying system is the need of the day for regularity in monitoring the predefined issue.
+The proposed system has been assembled with the arrangement of IR and ultrasonic sensors for crack and obstacle detection in a precise way.
+ The control unit consists of an Arduino Uno board, which is helpful to interface the GSM module for transmitting the message of the faulted
+ crack found to the concerned authority. an IR sensor has been attached with it for detecting cracks so that the defect gets readily available to the concerned
+ authority station. 
+
+
+
+
+
